@@ -1,0 +1,9 @@
+/usr/local/include/stoch_graph/util_point.hpp
+/usr/local/include/stoch_graph/density_to_velocity.hpp
+/usr/local/include/stoch_graph/local_frame.hpp
+/usr/local/include/stoch_graph/sumo_util.hpp
+/usr/local/include/stoch_graph/stoch_graph.hpp
+/usr/local/include/stoch_graph/util_path_element.hpp
+/usr/local/include/stoch_graph/velocity_map.hpp
+/usr/local/include/stoch_graph/stoch_edge.hpp
+/usr/local/lib/libstoch_graph.so

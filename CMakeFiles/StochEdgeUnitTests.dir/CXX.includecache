@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/playpen/wilkie/StochGraph/density_to_velocity.hpp
+iostream
+-
+
+/playpen/wilkie/StochGraph/stoch_edge.hpp
+density_to_velocity.hpp
+/playpen/wilkie/StochGraph/density_to_velocity.hpp
+util_point.hpp
+/playpen/wilkie/StochGraph/util_point.hpp
+vector
+-
+map
+-
+boost/math/distributions/normal.hpp
+-
+gtest/gtest_prod.h
+-
+
+/playpen/wilkie/StochGraph/stoch_edge_unit_tests.cpp
+stoch_edge.hpp
+/playpen/wilkie/StochGraph/stoch_edge.hpp
+gtest/gtest.h
+-
+
+/playpen/wilkie/StochGraph/util_point.hpp
+

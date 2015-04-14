@@ -1,0 +1,13 @@
+
+# Ignore binary and generated files.
+CMakeFiles/
+StochEdgeUnitTests
+StochGraphUnitTests
+SumoUtilUnitTests
+install_manifest.txt
+^CMakeCache
+Makefile
+cmake_install.cmake
+
+# Ignores emacs auto-save files.
+\~$

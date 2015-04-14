@@ -1,0 +1,1 @@
+/usr/bin/c++    -O3 -Wfatal-errors --std=c++11    CMakeFiles/StochGraphUnitTests.dir/stoch_graph_unit_tests.cpp.o  -o StochGraphUnitTests -rdynamic /usr/src/gtest/libgtest.a libstoch_graph.so -lpthread -lxml++-2.6 -lglibmm-2.4 /usr/local/lib/libroadie.so -lboost_system -lproj -lprotobuf -Wl,-rpath,/playpen/wilkie/StochGraph:/usr/local/lib 

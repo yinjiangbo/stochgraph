@@ -1,0 +1,70 @@
+<types>
+  <type id="highway.motorway" priority="13" numLanes="2" speed="44.0" />
+  <type id="highway.motorway_link" priority="8" numLanes="1" speed="13.889" />
+  <type id="highway.trunk" priority="4" numLanes="2" speed="13.889" />
+  <type id="highway.trunk_link" priority="4" numLanes="1" speed="13.889" />
+  <type id="highway.residential" priority="7" numLanes="1" speed="13.889" />
+  <type id="highway.primary" priority="4" numLanes="2" speed="13.889" />
+  <type id="highway.primary_link" priority="4" numLanes="1" speed="13.889" />
+  <type id="highway.secondary" priority="4" numLanes="2" speed="13.889" />
+  <type id="highway.secondary_link" priority="4" numLanes="1" speed="13.889" />
+  <type id="highway.tertiary" priority="4" numLanes="1" speed="13.889" />
+  <type id="highway.unclassified" priority="4" numLanes="1" speed="13.889"/>
+  <type id="highway.road" priority="4" numLanes="1" speed="13.889"/>
+  <type id="highway.service" priority="7" numLanes="1" speed="13.889" />
+  <type id="highway.living_street" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.pedestrian" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.bus_guideway" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.bus_track" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.track" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.path" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.cycleway" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.footway" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.bridleway" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.steps" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.rail" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.tram" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.light_rail" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.subway" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.monorail" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="highway.construction" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="railway.abandoned" priority="4" numLanes="1" speed="13.889" discard="true"/>
+  <type id="railway.rail" discard="true"/>
+  <type id="railway.subway" discard="true"/>
+</types>
+
+<!--
+
+highway.motorway	 13	 2	 41.667	 41.667	 Autobahn. No legislative speed limit: 44.4 is just a reasonable default. [2] is a bit opposite to [3] regarding oneway tagging. All types but pedestrian, bicycle and all kinds of railways.
+highway.motorway_link	 8	 1	 27.778	 13.889	 Links are usually subordinate to the road that leads to the trunk (e.g. a secondary or tertiary road). As a consequence, I treat all links similar to the type unclassified.
+highway.trunk	 12	 1	 27.778	 13.889	 Autobahnähnlich [4] [5]. Lanes, maxspeed and oneway should be tagged explicitely. All types but pedestrian, bicycle and all kinds of railways.
+highway.trunk_link	 8	 1	 27.778	 13.889	 Links are usually subordinate to the road that leads to the trunk (e.g. a secondary or tertiary road). As a consequence, I treat all links similar to the type unclassified.
+highway.primary	 11	 1	 27.778	 13.889	 Bundesstraße [6] [7]
+highway.primary_link	 8	 1	 27.778	 13.889	 Links are usually subordinate to the road that leads to the trunk (e.g. a secondary or tertiary road). As a consequence, I treat all links similar to the type unclassified.
+highway.secondary	 10	 1	 27.778	 13.889	 Land-, Staats-, or a major Kreisstraße [8] [9]
+highway.secondary_link	 8	 1	 27.778	 13.889	 Links are usually subordinate to the road that leads to the trunk (e.g. a tertiary road). As a consequence, I treat all links similar to the type unclassified.
+highway.tertiary	 9	 1	 27.778	 13.889	 Kreisstraße, major Gemeindeverbindungsstraße or minor Staats-/Landesstraße [10] [11]
+highway.unclassified	 8	 1	 27.778	 13.889	 Below tertiary, still interconnecting, not in a residential area [12] [13] [14] [15]
+highway.residential	 7	 1	 27.778	 13.889	 Accessing a residential area, should probably not be outside a town [16] [17]
+highway.road	 7	 1	 27.778	 13.889	 A road that is not yet classified. So we cannot know anything. Do classify them! [18]
+highway.living_street	 6	 1	 1.389	 1.389	 Verkehrsberuhigter Bereich (walking speed). If you leave that street, you have to give way [19]
+highway.pedestrian	 5	 1	 1.389	 1.389	 Fußgängerzone. Pedestrians only. (Bicylces should be pushed.) [20] [21]
+highway.service	 5	 1	 27.778	 13.889	 No explicit regulatory speed limit. Usually you have to give way when leaving such a street as it is not part of the road network with moving traffic. [22]
+highway.bus_guideway	 5	 1	 27.778	 13.889	 For busses only. [23]
+highway.track	 4	 1	 8.333	 8.333	 For agricultural traffic, usually not used by normal vehicles. Thus we assign it to bicylces and pedestrians. [24]
+highway.path	 2	 1	 6.944	 6.944	 Usually “not intended for motor vehicles”. [25]
+highway.cycleway	 2	 1	 6.944	 6.944	 “Access is only allowed for bikes” in Germany. [26]
+highway.footway	 2	 1	 1.389	 1.389	 For designated footpaths in Germany. (Bicycles must be tagged explicitely.) [27] [28]
+highway.bridleway	 2	 1	 6.944	 6.944	 For pedestrians, horses and sometimes bicycles. [29]
+highway.steps	 2	 1	 1.389	 1.389	 Steps are usually for pedestrians. [30]
+railway.rail	 7	 1	 38.889	 22.222	 Typical full sized trains. (I did not found reasonable data for typical speeds on German railway. The values in the Eisenbahn-Bau- und Betriebsordnung are quite high.) Assigned it to the SUMO class rail_fast. [31] [32]
+railway.tram	 7	 1	 16.667	 16.667	 Trams. Assigned it to the SUMO class cityrail. [33] [34]
+railway.light_rail	 7	 1	 33.333	 33.333	 The maximum speed of the S-Bahn in Munich is 120km/h [35]. Assigned it to the SUMO class lightrail. [36]
+railway.subway	 7	 1	 22.222	 22.222	 The maximum speed of the U-Bahn in Munich is 80km/h [37]. Assigned it to the SUMO class cityrail. [38]
+railway.preserved	 7	 1	 8.333	 8.333	 Historic trains. Assigned it to the SUMO class lightrail. [39] [40]
+railway.narrow_gauge	 7	 1	 33.333	 33.333	 Smaller gauge. Assigned it to the SUMO class lightrail. [41]]
+railway.monorail	 7	 1	 16.667	 16.667	 “Trains run on one single rail”. Assigned it to the SUMO class lightrail. [42]
+railway.funicular	 7	 1	 16.667	 16.667	 “Cable driven inclined railways”. Assigned it to the SUMO class cityrail. [43] [44]
+
+
+-->

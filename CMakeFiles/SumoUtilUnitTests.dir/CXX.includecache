@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/playpen/wilkie/StochGraph/sumo_util.hpp
+util_path_element.hpp
+/playpen/wilkie/StochGraph/util_path_element.hpp
+proj_api.h
+-
+iostream
+-
+fstream
+-
+tuple
+-
+string
+-
+cmath
+-
+vector
+-
+map
+-
+
+/playpen/wilkie/StochGraph/sumo_util_unit_tests.cpp
+sumo_util.hpp
+/playpen/wilkie/StochGraph/sumo_util.hpp
+gtest/gtest.h
+-
+
+/playpen/wilkie/StochGraph/util_path_element.hpp
+boost/math/distributions/normal.hpp
+-
+
